@@ -21,7 +21,7 @@ Thread(target=run_flask).start()
 
 TOKEN = os.environ.get("TOKEN")
 
-exchange = ccxt.binance()
+exchange = ccxt.bybit()
 
 def fmt(p):
     if p == 0:
